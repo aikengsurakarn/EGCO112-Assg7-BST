@@ -7,6 +7,7 @@ int main( int argc, char** argv )
    unsigned int i; // counter to loop from 1-10
    int item; // variable to hold random values
    BST b;
+  int x;
 
    
 b.root= NULL;  b.size=0;// tree initially empty
@@ -30,6 +31,10 @@ for ( i = 1; i < argc; ++i ) {
    
     printf("\nThe postOrder traversal is:\n");
     postOrder( b.root ); 
+    printf("\n");
+
+    printf("\nThe tree traversal is:\n");
+    tree( b.root, x ); 
     printf("\n");
 
 } // end main
